@@ -1,0 +1,37 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+#######UserController################
+Post   /api/user                             UsersController.Create
+Get   /api/user                               UsersController.Index
+DELETE   /api/user/:id                        UsersController.Delete
+PUT   /api/user/:id                           UsersController.Update
+Post   /api/login                             UsersController.Login
+
+
+##############Citizencontroller###################
+   GET        /api/citizen                              Citizencontroller.Index
+   POST     /api/citizen                                 Citizencontroller.Create
+   PUT       /api/citizen/:id                            Citizencontroller.Update
+   DELETE    /api/citizen/:id                             Citizencontroller.Delete
+##############Propertycontroller###################
+   GET        /api/property                              Propertycontroller.Index
+   POST     /api/property                                  Propertycontroller.Create
+   PUT       /api/property/:id                            Propertycontroller.Update
+   DELETE    /api/property/:id                             Propertycontroller.Delete
+##############Regioncontroller###################
+   GET        /api/region                              Regioncontroller.Index
+   POST     /api/region                                 Regioncontroller.Create
+   PUT       /api/region/:id                            Regioncontroller.Update
+   DELETE    /api/region/:id                             Regioncontroller.Delete
+   ##############Taxcontroller###################
+      GET        /api/tax                              Taxcontroller.Index
+      POST     /api/tax                                 Taxcontroller.Create
+      PUT       /api/tax/:id                            Taxcontroller.Update
+      DELETE    /api/tax/:id                             Taxcontroller.Delete
+
+
+   ##############Likescontroller###################
+       GET       /api/likes/:id                        Likescontroller.Index
+       POST      /api/likes/:id                            Likescontroller.Create
+       DELETE     /api/likes/:id                           Likescontroller.Delete
